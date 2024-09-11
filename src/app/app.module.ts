@@ -15,13 +15,25 @@ import {MatSidenavModule} from "@angular/material/sidenav";
 import {MatListModule} from "@angular/material/list";
 import {MatLineModule} from "@angular/material/core";
 import { CarComponent } from './components/car/car.component';
+import { HomeComponent } from './components/home/home.component';
+import { AdminComponent } from './components/admin/admin.component';
+import { UserComponent } from './components/user/user.component';
+import { LoginComponent } from './components/login/login.component';
+import { ForbiddenComponent } from './components/forbidden/forbidden.component';
+import { FormsModule } from '@angular/forms';
+import { HttpClientModule } from '@angular/common/http';
 
 @NgModule({
   declarations: [
     AppComponent,
     HeaderComponent,
     ContentComponent,
-    CarComponent
+    CarComponent,
+    HomeComponent,
+    AdminComponent,
+    UserComponent,
+    LoginComponent,
+    ForbiddenComponent
   ],
   imports: [
     BrowserModule,
@@ -34,7 +46,9 @@ import { CarComponent } from './components/car/car.component';
     MatIconModule,
     MatSidenavModule,
     MatListModule,
-    MatLineModule
+    MatLineModule,
+    FormsModule,
+    HttpClientModule 
   ],
   providers: [],
   bootstrap: [AppComponent]
