@@ -13,14 +13,14 @@ export class LoginComponent implements OnInit{
   }
 
   ngOnInit(): void {
-    throw new Error('Method not implemented.');
+    // throw new Error('Method not implemented.');
   }
 
   login(loginForm:NgForm){
     console.log("form is submitted");
     console.log(loginForm.value);
     this.userService.login(loginForm.value).subscribe(
-      (response) => { 
+      (response) => {
         console.log(response);
       },
       (error => {
